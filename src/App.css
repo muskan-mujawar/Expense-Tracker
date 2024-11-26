@@ -1,0 +1,40 @@
+.space-grotesk-font {
+  font-family: "Space Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.income-box {
+  border: 1px solid rgb(22, 74, 22);
+  color: green;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  background-color: rgba(0, 128, 0, 0.073);
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-box {
+  border: 1px solid rgb(209, 19, 19);
+  color: red;
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.08);
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
