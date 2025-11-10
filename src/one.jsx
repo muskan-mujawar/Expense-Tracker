@@ -1,24 +1,24 @@
 import React, { useState } from "react";
-import Input from "./input";
-import List from "./list";
-import Stats from "./stats";
+import Input from "./Input";
+import List from "./List";
+import Budget from "./Budget";
+import Stats from "./stats.jsx";
 
 export default function One() {
   const [data, setData] = useState([]);
 
+  function handleAdd(newItem) {
+    setData([...data, newItem]);
+  }
+
   return (
-    <div className="container">
-      <div className="left">
+    <div className="container d-flex justify-content-around mt-4">
+      <div>
         <Stats sharedData={data} />
-        <Input
-          setSharedData={(newdata) => {
-            setData([...data, newdata]);
-          }}
-        />
-      </div>
-      <div className="right">
+        <Input setSharedData={handleAdd} />
         <List sharedData={data} />
       </div>
+      <Budget sharedData={data} />
     </div>
   );
 }

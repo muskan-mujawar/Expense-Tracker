@@ -17,24 +17,30 @@
 
 .income-box {
   border: 1px solid rgb(22, 74, 22);
-  color: green;
+
   padding: 0.5rem 3rem;
   border-radius: 8px;
   background-color: rgba(0, 128, 0, 0.073);
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 7em;
+  width: 12em;
 }
 
 .expense-box {
   border: 1px solid rgb(209, 19, 19);
-  color: red;
+
   padding: 0.5rem 3rem;
   border-radius: 8px;
   background-color: rgba(255, 0, 0, 0.08);
-  width: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 7em;
+  width: 12em;
+}
+
+.balance-box {
+  border: 1px solid rgb(209, 19, 19);
+
+  padding: 0.5rem 3rem;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.08);
+  height: 7em;
+  width: 12em;
 }

@@ -4,14 +4,15 @@ import Dropdown from "./dropdown";
 export default function Input(props) {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
+  const [category, setCategory] = useState("");
 
   function handleChange() {
-    props.setSharedData({ name, amount: Number(amount) });
+    props.setSharedData({ name, amount: Number(amount), category });
   }
 
   function handleNumInput(e) {
     const val = e.target.value;
-    console.log(val, /^[0-9]*$/.test(val));
+
     if (/^\-?[0-9]*$/.test(val)) {
       setAmount(val);
     }
@@ -28,7 +29,7 @@ export default function Input(props) {
         onChange={(e) => setName(e.target.value)}
         placeholder="Enter Transaction Name"
       />
-      <Dropdown />
+      <Dropdown onSelectCategory={(cat) => setCategory(cat)} s />
       <h5 className="pt-3 pb-0 mb-0">Amount:</h5>
       <input
         style={{

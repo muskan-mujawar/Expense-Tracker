@@ -3,7 +3,7 @@ import React from "react";
 export default function List({ sharedData }) {
   return (
     <div>
-      <h1 className="space-grotesk-font">Transactions</h1>
+      <h1 className="space-grotesk-font ">Transactions</h1>
       {sharedData.map((data) => {
         return (
           <div className="border border-secondary-subtle rounded-2 d-flex justify-content-between mb-3 p-2 ">
