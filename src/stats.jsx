@@ -14,19 +14,19 @@ export default function Stats({ sharedData }) {
   var balance = Income - Expense;
 
   return (
-    <div className="d-flex mb-3 h-[15em ]s">
-      <div className=" border p-0 m-2 rounded balance-box  ">
+    <div className="p-4 m-2 ms-0 ps-3 h-[10em] d-flex ">
+      <div className="flex flex-col items-center justify-center border p-0 m-1 ms-0 rounded balance-box ">
         Current Balance
         <br />
-        <p className="flex m-0 p-[5em] text-center">{balance}</p>
+        <h3 className=" m-0">₹{balance}</h3>
       </div>
-      <div className="border rounded p-0 m-2 income-box">
+      <div className="flex flex-col items-center justify-center border p-0 m-1 rounded income-box">
         Income <br />
-        {Income}
+        <h3 className=" m-0">₹{Income}</h3>
       </div>
-      <div className="border rounded p-0 m-2 expense-box  ">
+      <div className="flex flex-col items-center m-1 justify-center border p-0 rounded expense-box">
         Expense <br />
-        {Expense}
+        <h3 className=" m-0">₹{Expense} </h3>
       </div>
     </div>
   );

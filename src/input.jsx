@@ -19,30 +19,25 @@ export default function Input(props) {
   }
 
   return (
-    <div>
-      <h5 className="mb-0">Name:</h5>
+    <div className="m-2 p-4 border border-black rounded-2xl bg-white">
+      <h5 className="mb-0 ">Name:</h5>
       <input
-        style={{
-          width: "300px",
-        }}
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Enter Transaction Name"
+        className="ps-2 border border-black rounded-md w-[300px]"
       />
-      <Dropdown onSelectCategory={(cat) => setCategory(cat)} s />
+      <Dropdown onSelectCategory={(cat) => setCategory(cat)} />
       <h5 className="pt-3 pb-0 mb-0">Amount:</h5>
       <input
-        style={{
-          width: "300px",
-        }}
         value={amount}
         onChange={handleNumInput}
         placeholder="Enter Transaction Amount"
+        className="ps-2 border border-black rounded-md w-[300px]"
       />
 
-      <div className="pt-3 ">
-        {" "}
-        <button className="btn btn-outline-secondary" onClick={handleChange}>
+      <div className="pt-3">
+        <button className=" btn btn-outline-secondary" onClick={handleChange}>
           Add
         </button>
       </div>

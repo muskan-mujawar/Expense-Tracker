@@ -1,3 +1,8 @@
+@import "tailwindcss";
+
+body {
+  background-color: rgb(237, 235, 216);
+}
 .space-grotesk-font {
   font-family: "Space Grotesk", serif;
   font-optical-sizing: auto;
@@ -17,30 +22,35 @@
 
 .income-box {
   border: 1px solid rgb(22, 74, 22);
-
-  padding: 0.5rem 3rem;
   border-radius: 8px;
-  background-color: rgba(0, 128, 0, 0.073);
   height: 7em;
   width: 12em;
+  background-color: white;
 }
 
 .expense-box {
   border: 1px solid rgb(209, 19, 19);
-
-  padding: 0.5rem 3rem;
   border-radius: 8px;
-  background-color: rgba(255, 0, 0, 0.08);
+  background-color: white;
   height: 7em;
   width: 12em;
 }
 
 .balance-box {
   border: 1px solid rgb(209, 19, 19);
-
-  padding: 0.5rem 3rem;
   border-radius: 8px;
   background-color: rgba(255, 0, 0, 0.08);
-  height: 7em;
   width: 12em;
+  background-color: black;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+}
+.my-div {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
 }

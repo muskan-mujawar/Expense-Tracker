@@ -15,7 +15,7 @@ export default function Dropdown({ onSelectCategory }) {
       <h5 className="mt-3 mb-1">Category:</h5>
       <div className="dropdown">
         <button
-          className="border border-black btn btn-outline-secondary dropdown-toggle"
+          className="p-0 border border-black btn  dropdown-toggle w-[300px] "
           type="button"
           data-bs-toggle="dropdown"
         >

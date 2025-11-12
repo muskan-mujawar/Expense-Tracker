@@ -18,7 +18,7 @@ export default function Budget({ sharedData }) {
   };
 
   return (
-    <div>
+    <div className="m-2 p-4 border border-black rounded-2xl bg-white">
       <h4 className="text-center mb-3">Budget Overview</h4>
       <Chart options={options} series={series} type="donut" width="380" />
     </div>
